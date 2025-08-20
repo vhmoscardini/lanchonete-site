@@ -8,30 +8,33 @@ main {
 	margin: 8px;
 }
 
-ul {
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
-	overflow: hidden;
-	text-align: center;
+.navbar {
+    padding: 14px 28px;
 	background: linear-gradient(180deg,rgba(199, 78, 82, 1) 0%, rgba(212, 49, 49, 1) 50%, rgba(170, 27, 31, 1) 100%);
+
+}
+.navdiv {
+	display: flex;
+	align-items: center;
+}
+.logo img {
+	height: 64px;
+	width: auto;
+	
+}
 li {
-	float: left;
+	list-style: none;
+	display: inline-block;
 }
-.logo {
-	margin: 16px;
-	margin-bottom: 5px;
-	align-content: center;
-}
-.menu a {
-    display: block;
-    color: white;
-    text-align: center;
+li a {
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
     text-decoration: none;
 	text-shadow: 2px 2px black;
     padding: 14px 16px;
 }
-.menu a:hover {
+li a:hover {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg,rgba(199, 78, 82, 1) 0%, rgba(212, 49, 49, 1) 50%, rgba(170, 27, 31, 1) 100%);
 	border-radius: 30px;
 }
