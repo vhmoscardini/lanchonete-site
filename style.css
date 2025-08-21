@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/incised-901');
+
 body {
 	margin: 0;
 	background-image: url("assets/fundo.png");
@@ -21,9 +23,7 @@ main {
 	align-items: center;
 }
 .logo img {
-	height: 64%;
-	width: auto;
-	
+	transform: scale(1.5);
 }
 li {
 	list-style: none;
