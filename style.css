@@ -15,15 +15,12 @@ main {
 
 .navbar {
     padding: 14px 28px;
-	background: linear-gradient(180deg,rgba(199, 78, 82, 1) 0%, rgba(212, 49, 49, 1) 50%, rgba(170, 27, 31, 1) 100%);
+	background: linear-gradient(180deg,rgba(232, 42, 42, 1) 0%, rgba(179, 18, 23, 1) 100%);
 
 }
 .navdiv {
 	display: flex;
 	align-items: center;
-}
-.logo img {
-	transform: scale(1.5);
 }
 li {
 	list-style: none;
@@ -38,7 +35,8 @@ li a {
     padding: 14px 16px;
 }
 li a:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg,rgba(199, 78, 82, 1) 0%, rgba(212, 49, 49, 1) 50%, rgba(170, 27, 31, 1) 100%);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+	linear-gradient(120deg,rgba(232, 42, 42, 1) 0%, rgba(179, 18, 23, 1) 100%);
 	border-radius: 30px;
 }
 
