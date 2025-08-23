@@ -77,3 +77,64 @@ li a:hover {
 	background: linear-gradient(120deg,rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 100%);
 }
 
+.card {
+	margin: 10px;
+	max-width: 360px;
+	height: 30rem;
+	box-sizing: border-box;
+	overflow: hidden;
+	border: 8px solid transparent;
+	border-image: url("assets/border.png") 20% round;
+	text-align: center;
+	/*background: linear-gradient(120deg,rgba(179, 18, 23, 0.8) 0%, rgba(110, 10, 13, 0.8) 100%);*/
+}
+.card h2 {
+	font-size: 1.5rem;
+	padding-top: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0;
+	text-align: left;
+}
+.card p {
+	font-size: 1.3rem;
+	padding-top: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0;
+	text-align: left;
+	color: rgba(212, 212, 212, 1)
+}
+
+#card-container {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 720px;
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	justify-content: center;
+	margin-top: 24px;
+}
+.card-button {
+	text-decoration: none;
+	display: inline-block; 
+	visibility: hidden;
+	font-size: 1.3rem;
+	background: linear-gradient(120deg,rgba(255, 217, 0, 1) 0%, rgba(255, 174, 0, 1) 100%);
+	border-radius: 24px;
+	color: black;
+	margin-top: 1rem;
+	padding: 16px 20px;
+}
+.card:hover .card-button {
+	visibility: visible;
+}
+.card-button:hover {
+	background: linear-gradient(120deg,rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 100%);
+}
+
+.card img {
+	width: 320px;
+	height: 320px;
+}
