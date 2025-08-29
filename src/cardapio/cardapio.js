@@ -14,7 +14,7 @@ function createCard(image, title, content) {
 	cardContent.textContent = content;
 	
 	const cardButton = document.createElement("a");
-	cardButton.textContent = "Eu quero!"
+	cardButton.textContent = "Pedir"
 	cardButton.setAttribute("href", "#");
 	cardButton.className = "card-button"
 
@@ -26,20 +26,29 @@ function createCard(image, title, content) {
 	return card;
 }
 
-const card1 = createCard("/assets/a.png","oi", "tudo bem")
-const card2 = createCard("/assets/b.png","olha que legall", "da pra criar varios")
-const card3 = createCard("/assets/c.jpg","sou um macaquinho", "gosto de comer banana")
-const card4 = createCard("/assets/c.jpg","sou um macaquinho", "gosto de comer banana")
-const card5 = createCard("/assets/c.jpg","sou um macaquinho", "gosto de comer banana")
-const card6 = createCard("/assets/c.jpg","sou um macaquinho", "gosto de comer banana")
-const card7 = createCard("/assets/c.jpg","sou um macaquinho", "gosto de comer banana")
-const card8 = createCard("/assets/c.jpg","sou um macaquinho", "gosto de comer banana")
+fetch("./cards.json")
+	.then(res => res.json())
+	.then(data => {
+		for (i in data.cards) {
+			card = createCard(data.cards[i].image, data.cards[i].name, data.cards[i].price)
+			cardContainer.appendChild(card);
+		}
+	})
 
-cardContainer.appendChild(card1);
-cardContainer.appendChild(card2);
-cardContainer.appendChild(card3);
-cardContainer.appendChild(card4);
-cardContainer.appendChild(card5);
-cardContainer.appendChild(card6);
-cardContainer.appendChild(card7);
-cardContainer.appendChild(card8);
+// const card1 = createCard("/assets/a.png","oi", "tudo bem")
+// const card2 = createCard("/assets/b.png","olha que legall", "da pra criar varios")
+// const card3 = createCard("/assets/c.jpg","sou um macaquinho", "gosto de comer banana")
+// const card4 = createCard("/assets/c.jpg","sou um macaquinho", "gosto de comer banana")
+// const card5 = createCard("/assets/c.jpg","sou um macaquinho", "gosto de comer banana")
+// const card6 = createCard("/assets/c.jpg","sou um macaquinho", "gosto de comer banana")
+// const card7 = createCard("/assets/c.jpg","sou um macaquinho", "gosto de comer banana")
+// const card8 = createCard("/assets/c.jpg","sou um macaquinho", "gosto de comer banana")
+// 
+// cardContainer.appendChild(card1);
+// cardContainer.appendChild(card2);
+// cardContainer.appendChild(card3);
+// cardContainer.appendChild(card4);
+// cardContainer.appendChild(card5);
+// cardContainer.appendChild(card6);
+// cardContainer.appendChild(card7);
+// cardContainer.appendChild(card8);
