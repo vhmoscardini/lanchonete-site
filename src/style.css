@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
 	margin: 0;
 	background-image: url("assets/fundo.png");
 	background-size: 18px;
 	color: white;
+	font-family: "Archivo Black", sans-serif;
 }
 html {
 	font-size: 18px;
@@ -14,6 +17,7 @@ main {
 .navbar {
     padding: 14px 28px;
 	background: linear-gradient(180deg,rgba(232, 42, 42, 1) 0%, rgba(179, 18, 23, 1) 100%);
+	filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.2));
 
 }
 .navdiv {
@@ -81,6 +85,7 @@ li a:hover {
 	margin: 10px;
 	max-width: 360px;
 	height: 30rem;
+	font-weight: bold;
 	box-sizing: border-box;
 	overflow: hidden;
 	border: 8px solid transparent;
@@ -103,7 +108,7 @@ li a:hover {
 	padding-right: 20px;
 	margin: 0;
 	text-align: left;
-	color: rgba(212, 212, 212, 1)
+	color: rgba(212, 212, 212, 1);
 }
 
 #card-container {
