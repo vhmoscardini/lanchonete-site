@@ -11,7 +11,7 @@ html {
 	font-size: 18px;
 }
 main {
-	margin: 8px;
+	margin: 0px;
 }
 
 .navbar {
@@ -60,12 +60,12 @@ li a:hover {
 	font-size: 20px;
 }
 .container .info h1 {
-	font-size: 2rem;
+	font-size: 2.2rem;
 }
 .container .info p {
 	margin: 0;
 	padding: 0;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 }
 .container .info a {
 	text-decoration: none;
@@ -81,6 +81,32 @@ li a:hover {
 	background: linear-gradient(120deg,rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 100%);
 }
 
+
+#cardapio, #contato {
+	width: 100%;
+	height: auto;
+}
+
+.cardapio-container, .contato-container, .email-container{
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.email-container {
+	margin-top: 2em;
+}
+.cardapio-container h2, .contato-container h2, .email-container h2{
+	font-size: 2rem;
+}
+
+.cardapio-container p, .contato-container p, .email-container p{
+	margin: 0;
+	padding: 0;
+	font-size: 1.2rem;
+
+}
 .card {
 	margin: 10px;
 	max-width: 360px;
@@ -91,6 +117,8 @@ li a:hover {
 	border: 8px solid transparent;
 	border-image: url("assets/border.png") 20% round;
 	text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+	linear-gradient(120deg,rgba(232, 42, 42, 0.2) 0%, rgba(179, 18, 23, 0.2) 100%);
 	/*background: linear-gradient(120deg,rgba(179, 18, 23, 0.8) 0%, rgba(110, 10, 13, 0.8) 100%);*/
 }
 .card h2 {
@@ -109,6 +137,11 @@ li a:hover {
 	margin: 0;
 	text-align: left;
 	color: rgba(212, 212, 212, 1);
+}
+
+.card img {
+	width: 320px;
+	height: 320px;
 }
 
 #card-container {
@@ -139,7 +172,76 @@ li a:hover {
 	background: linear-gradient(120deg,rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 100%);
 }
 
-.card img {
-	width: 320px;
-	height: 320px;
+form {
+	/*padding: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 16px;*/
+	max-width: 680px; 
+	margin: 0 auto;
+    background: rgba(0,0,0, 0.5);
+    border-radius: 16px; 
+	padding: 18px;
+
+}
+fieldset {
+	border: 0;
+}
+.campo label { 
+	margin-bottom: 0.8em;
+}
+.grupo {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	margin: 10px;
+	border-radius: 16px;
+}
+.campo {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 8px;
+}
+form button {
+  background: linear-gradient(120deg, rgba(232, 42, 42, 1) 0%, rgba(179, 18, 23, 1) 100%);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+form button:hover { 
+	background: linear-gradient(120deg,rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 100%);
+	color: black;
+}
+
+.campo input[type="text"], input[type="email"], input[type="tel"], .campo select, .campo textarea {
+	border-radius: 10px;
+	border: 0;
+	padding: 10px;
+	display: block;
+	resize: none;
+}
+/*input, select, textarea, button {
+	border-radius: 16px;
+}
+.campo {
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 16px;
+}
+.campo label {
+	margin-bottom: 0.8em;
+	display: inline-block;
+}
+.campo input[type="text"], input[type="email"], input[type="tel"], .campo select, .campo textarea {
+	border: 2px solid black;
+	display: block;
+}*/
+
+footer {
+	margin-top: 2em;
+	padding: 24px 24px;
+	text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+	linear-gradient(120deg,rgba(232, 42, 42, 1) 0%, rgba(179, 18, 23, 1) 100%);
 }
