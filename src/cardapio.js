@@ -1,7 +1,5 @@
 const cardContainer = document.getElementById("card-container");
 
-const cardCategory = document.createElement("div");
-cardCategory.classList.add("card-category");
 
 function createCard(image, title, price) {
 	const card = document.createElement("div");
@@ -44,20 +42,30 @@ function sendMessage(name) {
 
 	window.open(url, "_blank").focus();
 }
-const section = document.createElement("h2");
-section.textContent = "lanches";
-cardContainer.appendChild(section);
 
 fetch("./cards.json")
 	.then(res => res.json())
 	.then(data => {
 		for (i in data.cards) {
-			card = createCard(data.cards[i].image, data.cards[i].name, data.cards[i].price)
-			cardCategory.appendChild(card);
+			sectionTitle = document.createElement("h2");
+			sectionTitle.textContent = data.cards[i].name;
+			sectionDescription = document.createElement("p");
+			sectionDescription.textContent = data.cards[i].description;
+
+			cardContainer.appendChild(sectionTitle);
+			cardContainer.appendChild(sectionDescription);
+
+			cardCategory = document.createElement("div");
+			cardCategory.classList.add("card-category");
+			for (j in data.cards[i].content) {
+
+				card = createCard(data.cards[i].content[j].image, data.cards[i].content[j].name, data.cards[i].content[j].price)
+				cardCategory.appendChild(card);
+				cardContainer.appendChild(cardCategory);
+			}
 		}
 	})
 
-cardContainer.appendChild(cardCategory);
 // const card1 = createCard("/assets/a.png","oi", "tudo bem")
 // const card2 = createCard("/assets/b.png","olha que legall", "da pra criar varios")
 // const card3 = createCard("/assets/c.jpg","sou um macaquinho", "gosto de comer banana")

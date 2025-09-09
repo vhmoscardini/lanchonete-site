@@ -56,7 +56,7 @@ li a:hover {
 .container {
 	width: 90%;
 	height: 100%;
-	max-width: 780px;
+	max-width: 800px;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
@@ -118,39 +118,62 @@ li a:hover {
 
 }
 .card-content {
-	max-width: 360px;
-	height: 30rem;
+	width: 28em;
+	height: auto;
 	font-weight: bold;
-	box-sizing: border-box;
+	display: grid;
+	grid-template-columns: 1fr 200px; 1fr;
+	grid-template-rows: 48px;
 	overflow: hidden;
-	text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
 	linear-gradient(120deg,rgba(232, 42, 42, 0.2) 0%, rgba(179, 18, 23, 0.2) 100%);
 	/*background: linear-gradient(120deg,rgba(179, 18, 23, 0.8) 0%, rgba(110, 10, 13, 0.8) 100%);*/
 }
-.card-content h2 {
-	font-size: 1.5rem;
-	padding-top: 16px;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin: 0;
-	text-align: left;
+.card-content img {
+	width: 160px;
+	height: 160px;
+	grid-area: 1 / 1 / 3 / 2;
 }
-.card-content p {
+
+.card-content h2 {
 	font-size: 1.3rem;
 	padding-top: 16px;
 	padding-left: 20px;
 	padding-right: 20px;
 	margin: 0;
 	text-align: left;
+	grid-area: 1 / 2 / 2 / 3;
+}
+.card-content p {
+	font-size: 1.1rem;
+	padding-top: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: left;
 	color: rgba(212, 212, 212, 1);
+	grid-area: 2 / 2 / 3 / 3;
 }
 
-.card-content img {
-	width: 320px;
-	height: 320px;
+.card-button {
+	text-decoration: none;
+	display: inline-block; 
+	visibility: hidden;
+	font-size: 1.3rem;
+	font-weight: bold;
+	background: linear-gradient(120deg,rgba(255, 217, 0, 1) 0%, rgba(255, 174, 0, 1) 100%);
+	border-radius: 24px;
+	border: none;
+	color: black;
+	cursor: pointer;
+	margin: 52px 38px;
+	grid-area: 1 / 3 / 3 / 4;
 }
-
+.card:hover .card-button {
+	visibility: visible;
+}
+.card-button:hover {
+	background: linear-gradient(120deg,rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 100%);
+}
 #card-container {
 	text-align: center;
 }
@@ -163,26 +186,6 @@ li a:hover {
 	margin: 0 auto;
 	justify-content: center;
 	margin-top: 24px;
-}
-.card-button {
-	text-decoration: none;
-	display: inline-block; 
-	visibility: hidden;
-	font-size: 1.3rem;
-	font-weight: bold;
-	background: linear-gradient(120deg,rgba(255, 217, 0, 1) 0%, rgba(255, 174, 0, 1) 100%);
-	border-radius: 24px;
-	border: none;
-	color: black;
-	cursor: pointer;
-	margin-top: 1rem;
-	padding: 12px 20px;
-}
-.card:hover .card-button {
-	visibility: visible;
-}
-.card-button:hover {
-	background: linear-gradient(120deg,rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 100%);
 }
 
 form {

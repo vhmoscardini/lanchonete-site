@@ -1,10 +1,47 @@
 {
 	"cards": [
-		{ "image": "../assets/a.png", "name": "oi", "price": "tudo bem"},
-		{ "image": "../assets/b.png", "name": "olha que legall", "price": "da pra criar varios"},
-		{ "image": "../assets/c.jpg", "name": "sou um macaquinho", "price": "gosto de comer banana"},
-		{ "image": "https://png.pngtree.com/png-clipart/20230325/original/pngtree-juicy-burgers-with-a-transparent-background-png-image_9002761.png", "name": "hamburgao massa", "price": "R$14,59"},
-		{ "image": "https://img.cdndsgni.com/preview/10001736.jpg", "name": "batata fritaa", "price": "R$9,99"},
-		{ "image": "https://img.cdndsgni.com/preview/10001736.jpg", "name": "batata fritaa", "price": "R$9,99"}
+		{
+			"name": "Lanches",
+			"description": "Super deliciosos!",
+			"content": [
+				{ "image": "../assets/a.png", "name": "oi", "price": "tudo bem"},
+				{ "image": "../assets/b.png", "name": "olha que legall", "price": "da pra criar varios"},
+				{ "image": "../assets/c.jpg", "name": "sou um macaquinho", "price": "gosto de comer banana"},
+				{ "image": "https://png.pngtree.com/png-clipart/20230325/original/pngtree-juicy-burgers-with-a-transparent-background-png-image_9002761.png", "name": "hamburgao massa", "price": "R$14,59"},
+				{ "image": "https://img.cdndsgni.com/preview/10001736.jpg", "name": "batata fritaa", "price": "R$9,99"},
+				{ "image": "https://img.cdndsgni.com/preview/10001736.jpg", "name": "batata fritaa", "price": "R$9,99"}
+			]
+		},
+		{
+			"name": "Pizzas",
+			"description": "A crocância vai te surpreender!",
+			"content": [
+				{ "image": "https://superpizzapan.com.br/wp-content/uploads/2024/04/quatro-queijos.png", "name": "Quatro Queijos", "price": "R$41,99"},
+				{ "image": "https://superpizzapan.com.br/wp-content/uploads/2024/04/portuguesa.png", "name": "Portuguesa", "price": "R$39,99"},
+				{ "image": "https://superpizzapan.com.br/wp-content/uploads/2024/04/frango-catupiry-1.png", "name": "Frango com Catupiry", "price": "R$38,99"},
+				{ "image": "https://superpizzapan.com.br/wp-content/uploads/2024/04/paulista.png", "name": "Paulista", "price": "R$38,99"}
+			]
+		},
+		{
+			"name": "Hot-Dogs",
+			"description": "Bem saborosos!",
+			"content": [
+				{ "image": "https://cdn.discordapp.com/attachments/731329565544415324/1406390371738456208/Gx6qLvrXYAAwpRx.png?ex=68bca89a&is=68bb571a&hm=1b086663f210e26c7fcca3aa8e9230adf6fcc658c3485b919860915403cb906f&", "name": "bixo feio", "price": "nao compre ele"}
+			]
+		},
+		{
+			"name": "Refrigerantes",
+			"description": "oooo",
+			"content": [
+				{ "image": "https://cdn.discordapp.com/attachments/731329565544415324/1406390371738456208/Gx6qLvrXYAAwpRx.png?ex=68bca89a&is=68bb571a&hm=1b086663f210e26c7fcca3aa8e9230adf6fcc658c3485b919860915403cb906f&", "name": "bixo feio", "price": "nao compre ele"}
+			]
+		},
+		{
+			"name": "Sucos",
+			"description": "!",
+			"content": [
+				{ "image": "https://cdn.discordapp.com/attachments/731329565544415324/1406390371738456208/Gx6qLvrXYAAwpRx.png?ex=68bca89a&is=68bb571a&hm=1b086663f210e26c7fcca3aa8e9230adf6fcc658c3485b919860915403cb906f&", "name": "bixo feio", "price": "nao compre ele"}
+			]
+		}
 	]
 }
