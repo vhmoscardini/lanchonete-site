@@ -26,21 +26,26 @@
 			"name": "Hot-Dogs",
 			"description": "Bem saborosos!",
 			"content": [
-				{ "image": "https://cdn.discordapp.com/attachments/731329565544415324/1406390371738456208/Gx6qLvrXYAAwpRx.png?ex=68bca89a&is=68bb571a&hm=1b086663f210e26c7fcca3aa8e9230adf6fcc658c3485b919860915403cb906f&", "name": "bixo feio", "price": "nao compre ele"}
+				{ "image": "https://lh3.googleusercontent.com/z1q7_xqp5LUrK0M1TTr1QsNwpZ8QTy6gZE3ebWMkiV7vhs1dzVWZKQmP9XorCyat4hTyLSnyZVlwHHJuit7ziiijsNyfyGAd_Q=w612-h420-fcrop64=1,16d435bae92bffff-nu-e365-rw", "name": "Hot Dog 1", "price": "R$20,99"},
+				{ "image": "https://lh3.googleusercontent.com/omfH34WDr9hXnWw3i-lRZeiDCELMV9H4lCX4QVpa2F2t71O6B2vYJzXf6t-5Yk4dyq5IK0NOcNaTQChz-Vt5Af74H2kOhDtY_Q=w612-h420-fcrop64=1,000004f6fb22ffff-nu-e365-rw", "name": "Hot Dog 2", "price": "R$22,99"},
+				{ "image": "https://lh3.googleusercontent.com/tlWViq8ozwdSDjEFIxTAVZVPRvbyt1fJX04qAR8eZ3scVaTwctsD5GHaJcWFPBOTKESTGG8VtXYzG1S89XBSQcYqud6sOIDNWlk=w612-h420-fcrop64=1,194d3cb0dda1ffff-nu-e365-rw", "name": "Hot Dog 3", "price": "R$24,99"}
 			]
 		},
 		{
 			"name": "Refrigerantes",
 			"description": "oooo",
 			"content": [
-				{ "image": "https://cdn.discordapp.com/attachments/731329565544415324/1406390371738456208/Gx6qLvrXYAAwpRx.png?ex=68bca89a&is=68bb571a&hm=1b086663f210e26c7fcca3aa8e9230adf6fcc658c3485b919860915403cb906f&", "name": "bixo feio", "price": "nao compre ele"}
+				{ "image": "../assets/c1.png", "name": "Coca-Cola", "price": "R$9,49"},
+				{ "image": "../assets/c2.png", "name": "Guaraná", "price": "R$7,99"},
+				{ "image": "../assets/c3.png", "name": "Água", "price": "R$3,49"}
 			]
 		},
 		{
 			"name": "Sucos",
 			"description": "!",
 			"content": [
-				{ "image": "https://cdn.discordapp.com/attachments/731329565544415324/1406390371738456208/Gx6qLvrXYAAwpRx.png?ex=68bca89a&is=68bb571a&hm=1b086663f210e26c7fcca3aa8e9230adf6fcc658c3485b919860915403cb906f&", "name": "bixo feio", "price": "nao compre ele"}
+				{ "image": "../assets/s1.png", "name": "Laranja", "price": "R$9,99"},
+				{ "image": "../assets/s2.png", "name": "Abacaxi", "price": "R$9,99"}
 			]
 		}
 	]
