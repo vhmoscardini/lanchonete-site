@@ -15,7 +15,7 @@ function createCard(image, title, price) {
 	cardTitle.textContent = title;
 
 	const cardPrice = document.createElement("p");
-	cardPrice.textContent = price;
+	cardPrice.textContent = "R$" + price.toString().replace(".", ",");
 	
 	//const cardButton = document.createElement("a");
 	const cardButton = document.createElement("button");

@@ -4,48 +4,48 @@
 			"name": "Lanches",
 			"description": "Super deliciosos!",
 			"content": [
-				{ "image": "../assets/a.png", "name": "oi", "price": "tudo bem"},
-				{ "image": "../assets/b.png", "name": "olha que legall", "price": "da pra criar varios"},
-				{ "image": "../assets/c.jpg", "name": "sou um macaquinho", "price": "gosto de comer banana"},
-				{ "image": "https://png.pngtree.com/png-clipart/20230325/original/pngtree-juicy-burgers-with-a-transparent-background-png-image_9002761.png", "name": "hamburgao massa", "price": "R$14,59"},
-				{ "image": "https://img.cdndsgni.com/preview/10001736.jpg", "name": "batata fritaa", "price": "R$9,99"},
-				{ "image": "https://img.cdndsgni.com/preview/10001736.jpg", "name": "batata fritaa", "price": "R$9,99"}
+				{ "image": "../assets/a.png", "name": "oi", "price": 0.00},
+				{ "image": "../assets/b.png", "name": "olha que legall", "price": 0.00},
+				{ "image": "../assets/c.jpg", "name": "sou um macaquinho", "price": 0.00},
+				{ "image": "https://png.pngtree.com/png-clipart/20230325/original/pngtree-juicy-burgers-with-a-transparent-background-png-image_9002761.png", "name": "hamburgao massa", "price": 14.59},
+				{ "image": "https://img.cdndsgni.com/preview/10001736.jpg", "name": "batata fritaa", "price": 9.99},
+				{ "image": "https://img.cdndsgni.com/preview/10001736.jpg", "name": "batata fritaa", "price": 9.99}
 			]
 		},
 		{
 			"name": "Pizzas",
 			"description": "A crocância vai te surpreender!",
 			"content": [
-				{ "image": "https://superpizzapan.com.br/wp-content/uploads/2024/04/quatro-queijos.png", "name": "Quatro Queijos", "price": "R$41,99"},
-				{ "image": "https://superpizzapan.com.br/wp-content/uploads/2024/04/portuguesa.png", "name": "Portuguesa", "price": "R$39,99"},
-				{ "image": "https://superpizzapan.com.br/wp-content/uploads/2024/04/frango-catupiry-1.png", "name": "Frango com Catupiry", "price": "R$38,99"},
-				{ "image": "https://superpizzapan.com.br/wp-content/uploads/2024/04/paulista.png", "name": "Paulista", "price": "R$38,99"}
+				{ "image": "https://superpizzapan.com.br/wp-content/uploads/2024/04/quatro-queijos.png", "name": "Quatro Queijos", "price": 41.99},
+				{ "image": "https://superpizzapan.com.br/wp-content/uploads/2024/04/portuguesa.png", "name": "Portuguesa", "price": 39.99},
+				{ "image": "https://superpizzapan.com.br/wp-content/uploads/2024/04/frango-catupiry-1.png", "name": "Frango com Catupiry", "price": 38.99},
+				{ "image": "https://superpizzapan.com.br/wp-content/uploads/2024/04/paulista.png", "name": "Paulista", "price": 38.99}
 			]
 		},
 		{
 			"name": "Hot-Dogs",
 			"description": "Bem saborosos!",
 			"content": [
-				{ "image": "https://lh3.googleusercontent.com/z1q7_xqp5LUrK0M1TTr1QsNwpZ8QTy6gZE3ebWMkiV7vhs1dzVWZKQmP9XorCyat4hTyLSnyZVlwHHJuit7ziiijsNyfyGAd_Q=w612-h420-fcrop64=1,16d435bae92bffff-nu-e365-rw", "name": "Hot Dog 1", "price": "R$20,99"},
-				{ "image": "https://lh3.googleusercontent.com/omfH34WDr9hXnWw3i-lRZeiDCELMV9H4lCX4QVpa2F2t71O6B2vYJzXf6t-5Yk4dyq5IK0NOcNaTQChz-Vt5Af74H2kOhDtY_Q=w612-h420-fcrop64=1,000004f6fb22ffff-nu-e365-rw", "name": "Hot Dog 2", "price": "R$22,99"},
-				{ "image": "https://lh3.googleusercontent.com/tlWViq8ozwdSDjEFIxTAVZVPRvbyt1fJX04qAR8eZ3scVaTwctsD5GHaJcWFPBOTKESTGG8VtXYzG1S89XBSQcYqud6sOIDNWlk=w612-h420-fcrop64=1,194d3cb0dda1ffff-nu-e365-rw", "name": "Hot Dog 3", "price": "R$24,99"}
+				{ "image": "https://lh3.googleusercontent.com/z1q7_xqp5LUrK0M1TTr1QsNwpZ8QTy6gZE3ebWMkiV7vhs1dzVWZKQmP9XorCyat4hTyLSnyZVlwHHJuit7ziiijsNyfyGAd_Q=w612-h420-fcrop64=1,16d435bae92bffff-nu-e365-rw", "name": "Hot Dog 1", "price": 20.99},
+				{ "image": "https://lh3.googleusercontent.com/omfH34WDr9hXnWw3i-lRZeiDCELMV9H4lCX4QVpa2F2t71O6B2vYJzXf6t-5Yk4dyq5IK0NOcNaTQChz-Vt5Af74H2kOhDtY_Q=w612-h420-fcrop64=1,000004f6fb22ffff-nu-e365-rw", "name": "Hot Dog 2", "price": 22.99},
+				{ "image": "https://lh3.googleusercontent.com/tlWViq8ozwdSDjEFIxTAVZVPRvbyt1fJX04qAR8eZ3scVaTwctsD5GHaJcWFPBOTKESTGG8VtXYzG1S89XBSQcYqud6sOIDNWlk=w612-h420-fcrop64=1,194d3cb0dda1ffff-nu-e365-rw", "name": "Hot Dog 3", "price": 24.99}
 			]
 		},
 		{
 			"name": "Refrigerantes",
 			"description": "oooo",
 			"content": [
-				{ "image": "../assets/c1.png", "name": "Coca-Cola", "price": "R$9,49"},
-				{ "image": "../assets/c2.png", "name": "Guaraná", "price": "R$7,99"},
-				{ "image": "../assets/c3.png", "name": "Água", "price": "R$3,49"}
+				{ "image": "../assets/c1.png", "name": "Coca-Cola", "price": 9.49},
+				{ "image": "../assets/c2.png", "name": "Guaraná", "price": 7.99},
+				{ "image": "../assets/c3.png", "name": "Água", "price": 3.49}
 			]
 		},
 		{
 			"name": "Sucos",
 			"description": "!",
 			"content": [
-				{ "image": "../assets/s1.png", "name": "Laranja", "price": "R$9,99"},
-				{ "image": "../assets/s2.png", "name": "Abacaxi", "price": "R$9,99"}
+				{ "image": "../assets/s1.png", "name": "Laranja", "price": 9.99},
+				{ "image": "../assets/s2.png", "name": "Abacaxi", "price": 9.99}
 			]
 		}
 	]
