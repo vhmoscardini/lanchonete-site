@@ -237,7 +237,7 @@ fieldset {
 	padding: 10px;
 	display: block;
 	resize: none;
-	max-width: 480;
+	max-width: 480px;
 }
 /*input, select, textarea, button {
 	border-radius: 16px;
