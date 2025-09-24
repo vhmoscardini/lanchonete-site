@@ -4,12 +4,8 @@
 			"name": "Lanches",
 			"description": "Super deliciosos!",
 			"content": [
-				{ "image": "../assets/a.png", "name": "oi", "price": 0.00},
-				{ "image": "../assets/b.png", "name": "olha que legall", "price": 0.00},
-				{ "image": "../assets/c.jpg", "name": "sou um macaquinho", "price": 0.00},
-				{ "image": "https://png.pngtree.com/png-clipart/20230325/original/pngtree-juicy-burgers-with-a-transparent-background-png-image_9002761.png", "name": "hamburgao massa", "price": 14.59},
-				{ "image": "https://img.cdndsgni.com/preview/10001736.jpg", "name": "batata fritaa", "price": 9.99},
-				{ "image": "https://img.cdndsgni.com/preview/10001736.jpg", "name": "batata fritaa", "price": 9.99}
+				{ "image": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngplay.com%2Fwp-content%2Fuploads%2F2%2FBurger-Transparent-PNG.png&f=1&nofb=1&ipt=fdc26aca106234a24d0e904be30d9051671d27dd4b5b8c62c8fc030f433159a7", "name": "Hamburger", "price": 14.59},
+				{ "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngmart.com%2Ffiles%2F17%2FCrunchy-French-Fries-PNG-File.png&f=1&nofb=1&ipt=329c9852975bcc9971d2391460ea31fbefdf2f50a99d4d1b14ed5d6f75af8804", "name": "Batata Frita", "price": 9.99}
 			]
 		},
 		{
@@ -33,7 +29,7 @@
 		},
 		{
 			"name": "Refrigerantes",
-			"description": "oooo",
+			"description": "",
 			"content": [
 				{ "image": "../assets/c1.png", "name": "Coca-Cola", "price": 9.49},
 				{ "image": "../assets/c2.png", "name": "Guaraná", "price": 7.99},
@@ -42,7 +38,7 @@
 		},
 		{
 			"name": "Sucos",
-			"description": "!",
+			"description": "",
 			"content": [
 				{ "image": "../assets/s1.png", "name": "Laranja", "price": 9.99},
 				{ "image": "../assets/s2.png", "name": "Abacaxi", "price": 9.99}

@@ -38,7 +38,7 @@ function createCard(image, title, price) {
 
 function sendMessage(name) {
 	let number = "+5516989953333"
-	var url = `https://wa.me/${number}?text=Olá, eu gostaria de pedir um ${name}`
+	var url = `https://wa.me/${number}?text=Olá, eu gostaria de pedir um(a) ${name}`
 
 	window.open(url, "_blank").focus();
 }

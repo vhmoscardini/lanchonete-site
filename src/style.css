@@ -1,5 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo&display=swap');
 
+@property --cardColor1 {
+  syntax: '<color>';
+  initial-value: #ffd900;
+  inherits: false;
+}
+@property --cardColor2 {
+  syntax: '<color>';
+  initial-value: #ffae00;
+  inherits: false;
+}
+@property --navColor1 {
+  syntax: '<color>';
+  initial-value: #ffd90000;
+  inherits: false;
+}
+@property --navColor2 {
+  syntax: '<color>';
+  initial-value: #ffae0000;
+  inherits: false;
+}
+@property --formColor1 {
+  syntax: '<color>';
+  initial-value: #e82a2a;
+  inherits: false;
+}
+@property --formColor2 {
+  syntax: '<color>';
+  initial-value: #b31217;
+  inherits: false;
+}
+@property --shade {
+  syntax: '<color>';
+  initial-value: #00000000;
+  inherits: false;
+}
 .archivo-black-regular {
   font-family: "Archivo Black", sans-serif;
 }
@@ -34,16 +69,25 @@ li {
 }
 li a {
 	color: white;
+	/*background: linear-gradient(120deg,var(--navColor1) 0%, var(--navColor2) 100%);*/
+    	background: linear-gradient(var(--shade), var(--shade)),
+		linear-gradient(120deg,var(--navColor1) 0%, var(--navColor2) 100%);
+	border-radius: 30px;
 	font-weight: bold;
 	font-size: 24px;
-    text-decoration: none;
+    	text-decoration: none;
 	text-shadow: 2px 2px black;
-    padding: 14px 16px;
+    	padding: 14px 16px;
+	transition: --navColor1 0.3s, --navColor2 0.3s, --shade 0.3s;
+    	
 }
 li a:hover {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-	linear-gradient(120deg,rgba(232, 42, 42, 1) 0%, rgba(179, 18, 23, 1) 100%);
-	border-radius: 30px;
+    /*background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),*/
+	/*linear-gradient(120deg,rgba(232, 42, 42, 1) 0%, rgba(179, 18, 23, 1) 100%);*/
+    --navColor1: #e82a2a;
+    --navColor2: #b31217;
+    --shade: #00000033;
+
 }
 
 .hero {
@@ -75,14 +119,17 @@ li a:hover {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 1.2rem;
-	background: linear-gradient(120deg,rgba(255, 217, 0, 1) 0%, rgba(255, 174, 0, 1) 100%);
+	background: linear-gradient(120deg,var(--cardColor1) 0%, var(--cardColor2) 100%);
 	border-radius: 24px;
 	color: black;
 	margin-top: 1rem;
 	padding: 14px 16px;
+	transition: --cardColor1 0.3s, --cardColor2 0.3s;
 }
 .container .info a:hover {
-	background: linear-gradient(120deg,rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 100%);
+	--cardColor1: #ffffff;
+  	--cardColor2: #d4d4d4;
+	/*background: linear-gradient(120deg,rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 100%);*/
 }
 
 
@@ -115,8 +162,13 @@ li a:hover {
 	border: 8px solid transparent;
 	border-image: url("assets/border.png") 20% round;
 	margin: 10px;
+	transition: 0.1s;
 
 }
+.card:hover {
+	transform: scale(1.1);
+}
+
 .card-content {
 	width: 28em;
 	height: auto;
@@ -125,7 +177,7 @@ li a:hover {
 	grid-template-columns: 1fr 200px; 1fr;
 	grid-template-rows: 48px;
 	overflow: hidden;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
 	linear-gradient(120deg,rgba(232, 42, 42, 0.2) 0%, rgba(179, 18, 23, 0.2) 100%);
 	/*background: linear-gradient(120deg,rgba(179, 18, 23, 0.8) 0%, rgba(110, 10, 13, 0.8) 100%);*/
 }
@@ -160,7 +212,7 @@ li a:hover {
 	visibility: hidden;
 	font-size: 1.3rem;
 	font-weight: bold;
-	background: linear-gradient(120deg,rgba(255, 217, 0, 1) 0%, rgba(255, 174, 0, 1) 100%);
+	background: linear-gradient(120deg,var(--cardColor1) 0%, var(--cardColor2) 100%);
 	border-radius: 24px;
 	border: none;
 	color: black;
@@ -168,12 +220,15 @@ li a:hover {
 	margin: 52px 38px;
 	padding: 0px 16px;
 	grid-area: 1 / 3 / 3 / 4;
+	transition: --cardColor1 0.3s, --cardColor2 0.3s;
 }
 .card:hover .card-button {
 	visibility: visible;
 }
 .card-button:hover {
-	background: linear-gradient(120deg,rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 100%);
+	--cardColor1: #ffffff;
+  	--cardColor2: #d4d4d4;
+	/*background: linear-gradient(120deg,rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 100%);*/
 }
 #card-container {
 	text-align: center;
@@ -218,16 +273,19 @@ fieldset {
 	padding: 8px;
 }
 .enviar {
-  background: linear-gradient(120deg, rgba(232, 42, 42, 1) 0%, rgba(179, 18, 23, 1) 100%);
+  background: linear-gradient(120deg, var(--formColor1) 0%, var(--formColor1) 100%);
   border: none;
   color: white;
   font-weight: bold;
   border-radius: 12px;
   padding: 12px 16px;
   cursor: pointer;
+  transition: --formColor1 0.3s, --formColor2 0.3s, color 0.3s;
 }
 .enviar:hover { 
-	background: linear-gradient(120deg,rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 100%);
+	--formColor1: #ffffff;
+  	--formColor2: #d4d4d4;
+	/*background: linear-gradient(120deg,rgba(255, 255, 255, 1) 0%, rgba(212, 212, 212, 1) 100%);*/
 	color: black;
 }
 
