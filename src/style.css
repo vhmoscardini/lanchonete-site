@@ -273,7 +273,7 @@ fieldset {
 	padding: 8px;
 }
 .enviar {
-  background: linear-gradient(120deg, var(--formColor1) 0%, var(--formColor1) 100%);
+  background: linear-gradient(120deg, var(--formColor1) 0%, var(--formColor2) 100%);
   border: none;
   color: white;
   font-weight: bold;
