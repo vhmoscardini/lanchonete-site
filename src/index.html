@@ -13,12 +13,35 @@
 				<a href="index.html"><img width="480" src="./assets/logo.svg"></object></a>
 			</div>
 			<div class="navbutton">
-            	<a href="#cardapio">Cardápio</a>
-            	<a href="#contato">Contato</a>
+            	<a href="#cardapio"><i class="fa-solid fa-clipboard-list"></i> Cardápio</a>
+            	<a href="#contato"><i class="fa-solid fa-envelope"></i> Contato</a>
 			</div>
-			<button class="carrinho"><i class="fa-solid fa-cart-shopping"></i> Carrinho</button>
+			<button class="carrinhobutton" onclick="abrirCarrinho()"><i class="fa-solid fa-cart-shopping"></i> Carrinho</button>
 		</div>
 	</nav>
+	<div id="sidepanel">
+		<div class="sidepanel-button">
+			<button class="close-button" onclick="fecharCarrinho()"><i class="fa-solid fa-xmark"></i></button>
+			<div class="sidepanel-content">
+				<div id=carrinho>
+					<h2>Seu Carrinho - MegaSabor</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Produto</th>
+								<th>Preço</th>
+								<th>Quantidade</th>
+								<th>Total</th>
+								<th>Ação</th>
+							</tr>
+						</thead>
+						<tbody id="itens-carrinho"><tbody>
+					</table>
+					<p>Total Geral: R$ <span id="total">0,00</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
 	<section class="hero">
 		<div class="container">
 			<div class=info>

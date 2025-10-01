@@ -2,39 +2,44 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css');
 
 @property --cardColor1 {
-  syntax: '<color>';
-  initial-value: #ffd900;
-  inherits: false;
+	syntax: '<color>';
+	initial-value: #ffd900;
+	inherits: false;
 }
 @property --cardColor2 {
-  syntax: '<color>';
-  initial-value: #ffae00;
-  inherits: false;
+	syntax: '<color>';
+	initial-value: #ffae00;
+	inherits: false;
 }
 @property --navColor1 {
-  syntax: '<color>';
-  initial-value: #ffd90000;
-  inherits: false;
+	syntax: '<color>';
+	initial-value: #00000000;
+	inherits: false;
 }
 @property --navColor2 {
-  syntax: '<color>';
-  initial-value: #ffae0000;
-  inherits: false;
+	syntax: '<color>';
+	initial-value: #00000000;
+	inherits: false;
 }
 @property --formColor1 {
-  syntax: '<color>';
-  initial-value: #e82a2a;
-  inherits: false;
+	syntax: '<color>';
+	initial-value: #e82a2a;
+	inherits: false;
 }
 @property --formColor2 {
-  syntax: '<color>';
-  initial-value: #b31217;
-  inherits: false;
+	syntax: '<color>';
+	initial-value: #b31217;
+	inherits: false;
+}
+@property --closeColor {
+	syntax: '<color>';
+	initial-value: #00000000;
+	inherits: false;
 }
 @property --shade {
-  syntax: '<color>';
-  initial-value: #00000000;
-  inherits: false;
+	syntax: '<color>';
+	initial-value: #00000000;
+	inherits: false;
 }
 .archivo-black-regular {
   font-family: "Archivo Black", sans-serif;
@@ -67,7 +72,8 @@ main {
 .navdiv .logo a {
 	margin-right: 20px;
 }
-.carrinho,
+.close-button,
+.carrinhobutton,
 .navbutton a {
 	color: white;
 	/*background: linear-gradient(120deg,var(--navColor1) 0%, var(--navColor2) 100%);*/
@@ -82,7 +88,12 @@ main {
 	transition: --navColor1 0.3s, --navColor2 0.3s, --shade 0.3s;
 
 }
-.carrinho:hover,
+.close-button:hover {
+	/*--closeColor: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+	linear-gradient(120deg,rgba(232, 42, 42, 1) 0%, rgba(179, 18, 23, 1) 100%);*/
+    --shade: #00000033;
+}
+.carrinhobutton:hover,
 .navbutton a:hover {
     /*background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),*/
 	/*linear-gradient(120deg,rgba(232, 42, 42, 1) 0%, rgba(179, 18, 23, 1) 100%);*/
@@ -92,8 +103,30 @@ main {
 
 }
 
-.carrinho {
+.carrinhobutton {
 	margin-left: auto;
+	border: none;
+	cursor: pointer;
+}
+#sidepanel {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+	linear-gradient(120deg,rgba(232, 42, 42, 1) 0%, rgba(179, 18, 23, 1) 100%);
+	border-radius: 0px 0px 20px 20px;
+	width: 0px;
+	height: 640px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	transition: 0.3s;
+}
+.sidepanel-button {
+	padding: 20px;
+}
+.sidepanel-content {
+	padding: 20px;
+}
+.close-button {
 	border: none;
 	cursor: pointer;
 }
