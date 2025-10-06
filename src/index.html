@@ -16,28 +16,38 @@
             	<a href="#cardapio"><i class="fa-solid fa-clipboard-list"></i> Cardápio</a>
             	<a href="#contato"><i class="fa-solid fa-envelope"></i> Contato</a>
 			</div>
-			<button class="carrinhobutton" onclick="abrirCarrinho()"><i class="fa-solid fa-cart-shopping"></i> Carrinho</button>
+			<div class="carrinho-container">
+				<span id="badge"><strong>2</strong></span>
+				<button class="carrinhobutton" onclick="openCart()"><i class="fa-solid fa-cart-shopping"></i> Carrinho</button>
+			</div>
 		</div>
 	</nav>
+	<div id="notification-container">
+	</div>
 	<div id="sidepanel">
 		<div class="sidepanel-button">
-			<button class="close-button" onclick="fecharCarrinho()"><i class="fa-solid fa-xmark"></i></button>
+			<button class="close-button" onclick="closeCart()"><i class="fa-solid fa-xmark"></i></button>
 			<div class="sidepanel-content">
 				<div id=carrinho>
 					<h2>Seu Carrinho - MegaSabor</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Produto</th>
-								<th>Preço</th>
-								<th>Quantidade</th>
-								<th>Total</th>
-								<th>Ação</th>
-							</tr>
-						</thead>
-						<tbody id="itens-carrinho"><tbody>
-					</table>
+					<div class="table-container">
+						<div class="table-content">
+							<table>
+								<thead>
+									<tr>
+										<th>Produto</th>
+										<th>Preço</th>
+										<th>Quantidade</th>
+										<th>Total</th>
+										<th>Ação</th>
+									</tr>
+								</thead>
+								<tbody id="itens-carrinho"><tbody>
+							</table>
+						</div>
+					</div>
 					<p>Total Geral: R$ <span id="total">0,00</span></p>
+					<button id="message-button" onclick="sendMessage()">Pedir</button>
 				</div>
 			</div>
 		</div>
@@ -62,7 +72,6 @@
 			</div>
 			<div id="cards">
 				<div id="card-container"></div>
-				<script src="cardapio.js"></script>
 			</div>
 		</section>
 		<section id="contato">
@@ -116,5 +125,7 @@
 	</main>
 	<footer>© <span id="year"></span> Mega Sabor. Todos os direitos reservados.</footer>
 	<script src="script.js"></script>
+	<script src="cardapio.js"></script>
+	<script src="carrinho.js"></script>
 </body>
 </html>

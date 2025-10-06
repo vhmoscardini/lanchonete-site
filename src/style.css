@@ -58,7 +58,32 @@ html {
 main {
 	margin: 0px;
 }
+.table-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
+}
+.table-content {
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
+	padding: 20px;
+}
+table {
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
+	border-collapse: collapse;
+	text-align: center;
+}
+tr {
+	padding: 40px;
+}
+th, td {
+	padding: 12px;
+
+}
 .navbar {
     padding: 14px 28px;
 	background: linear-gradient(180deg,rgba(232, 42, 42, 1) 0%, rgba(179, 18, 23, 1) 100%);
@@ -103,18 +128,65 @@ main {
 
 }
 
-.carrinhobutton {
+.carrinho-container {
 	margin-left: auto;
+}
+.carrinhobutton {
 	border: none;
 	cursor: pointer;
+}
+#itens-carrinho button {
+	background: darkred;
+	color: white;
+	border-radius: 20px;
+	padding: 6px 6px;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	cursor: pointer;
+}
+#badge {
+	background: linear-gradient(120deg,var(--cardColor1) 0%, var(--cardColor2) 100%);
+	color: black;
+	visibility: hidden;
+	border-radius: 20px;
+	margin-top: 8px;
+	margin-left: 36px;
+	padding: 2px 6px;
+	font-size: 14px;
+	font-weight: bold;
+	position: absolute;
+	pointer-events: none;
+}
+#notification-container {
+	display: flex;
+	margin: 0 auto;
+	align-items: flex-start;
+	flex-direction: column;
+	position: fixed;
+	z-index: 2;
+	bottom: 0;
+	pointer-events: none;
+}
+.notification {
+	background-color: green;
+	border-radius: 24px;
+	font-weight: bold;
+	margin-left: 24px;
+	margin-bottom: 24px;
+	padding: 20px;
+	transition: 0.3s;
 }
 #sidepanel {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
 	linear-gradient(120deg,rgba(232, 42, 42, 1) 0%, rgba(179, 18, 23, 1) 100%);
 	border-radius: 0px 0px 20px 20px;
 	width: 0px;
-	height: 640px;
+	max-height: 90vh;
+	overflow-y: auto;
+	overflow-x: hidden;
 	position: fixed;
+	white-space: nowrap;
 	top: 0;
 	right: 0;
 	z-index: 1;
@@ -246,10 +318,25 @@ main {
 	grid-area: 2 / 2 / 3 / 3;
 }
 
+#message-button {
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1.3rem;
+	font-weight: bold;
+	background: linear-gradient(120deg,var(--cardColor1) 0%, var(--cardColor2) 100%);
+	border-radius: 24px;
+	border: none;
+	color: black;
+	cursor: pointer;
+	margin-top: 1rem;
+	padding: 14px 16px;
+	transition: --cardColor1 0.3s, --cardColor2 0.3s;
+
+
+}
 .card-button {
 	text-decoration: none;
 	display: inline-block; 
-	visibility: hidden;
 	font-size: 1.3rem;
 	font-weight: bold;
 	background: linear-gradient(120deg,var(--cardColor1) 0%, var(--cardColor2) 100%);
