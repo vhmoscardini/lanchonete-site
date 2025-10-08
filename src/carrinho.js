@@ -1,5 +1,4 @@
 let carrinho = [];
-let carrinho_qnt = 0;
 
 function openCart() {
 	document.getElementById("sidepanel").style.width = "640px";
@@ -29,6 +28,7 @@ function updateCart() {
 			</tr>`;
 	})
 	document.getElementById("total").innerText = total.toFixed(2);
+	updateCount();
 }
 function addToCart(title, price) {
 	let item = carrinho.find(p => p.title == title);
@@ -38,16 +38,25 @@ function addToCart(title, price) {
 	else {
 		carrinho.push({title, price, qnt:1});
 	}
-	carrinho_qnt++;
+	updateCount();
 	sendNotification(`${title} foi adicionado ao carrinho.`)
-	document.getElementById("badge").innerHTML = carrinho_qnt
-	document.getElementById("badge").style.visibility = "visible";
-
-
 }
 function removeFromCart(index) {
 	carrinho.splice(index, 1);
 	updateCart();
+}
+function updateCount() {
+	let qnt = carrinho.reduce((acc,item) => acc + item.qnt, 0);
+	document.getElementById("badge").innerHTML = qnt
+	console.log(qnt)
+	if (qnt > 0) {
+		document.getElementById("badge").style.visibility = "visible";
+	}
+	else {
+		document.getElementById("badge").style.visibility = "hidden";
+	}
+
+
 }
 function sendMessage() {
 	let message = "*Pedido MegaSabor*%0A%0A";
@@ -63,6 +72,10 @@ function sendMessage() {
 	var url = `https://wa.me/${number}?text=${message}`
 
 	window.open(url, "_blank").focus();
+
+	carrinho = [];
+	updateCart();
+	updateCount();
 }
 
 function sendNotification(msg) {
