@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<nav class="navbar">
-		<div class="navdiv">
-			<div class="logo">
-				<a href="index.html"><img width="480" src="./assets/logo.svg"></object></a>
+	<nav class="nav-bar">
+		<div class="nav-container">
+			<div class="nav-left">
+				<a class="logo" href="#"><img width="480" src="./assets/logo.svg"></a>
+				<a class="button" href="#cardapio"><i class="fa-solid fa-clipboard-list"></i> Cardápio</a>
+				<a class="button" href="#contato"><i class="fa-solid fa-envelope"></i> Contato</a>
 			</div>
-			<div class="navbutton">
-            	<a href="#cardapio"><i class="fa-solid fa-clipboard-list"></i> Cardápio</a>
-            	<a href="#contato"><i class="fa-solid fa-envelope"></i> Contato</a>
-			</div>
-			<div class="carrinho-container">
-				<span id="badge"><strong>2</strong></span>
-				<button class="carrinhobutton" onclick="openCart()"><i class="fa-solid fa-cart-shopping"></i> Carrinho</button>
+			<div class="nav-right">
+				<div class="carrinho-container">
+					<span id="badge"><strong>2</strong></span>
+					<button class="carrinho-button" onclick="openCart()"><i class="fa-solid fa-cart-shopping"></i> Carrinho</button>
+				</div>
 			</div>
 		</div>
 	</nav>

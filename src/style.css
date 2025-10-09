@@ -62,7 +62,7 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
+	flex-wrap: wrap;
 }
 .table-content {
 	display: inline-block;
@@ -84,57 +84,60 @@ th, td {
 	padding: 12px;
 
 }
-.navbar {
+.nav-bar {
     padding: 14px 28px;
 	background: linear-gradient(180deg,rgba(232, 42, 42, 1) 0%, rgba(179, 18, 23, 1) 100%);
 	filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.2));
-
 }
-.navdiv {
+.nav-container {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
-.navdiv .logo a {
+.nav-right,
+.nav-left {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.nav-left .logo {
 	margin-right: 20px;
 }
+.nav-left .buttons {
+	list-style: none;
+}
 .close-button,
-.carrinhobutton,
-.navbutton a {
+.nav-right .carrinho-container .carrinho-button,
+.nav-left .button {
 	color: white;
-	/*background: linear-gradient(120deg,var(--navColor1) 0%, var(--navColor2) 100%);*/
 	background: linear-gradient(var(--shade), var(--shade)),
 	linear-gradient(120deg,var(--navColor1) 0%, var(--navColor2) 100%);
 	border-radius: 30px;
+	padding: 14px 16px;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 28px;
 	text-decoration: none;
 	text-shadow: 2px 2px black;
-	padding: 14px 16px;
 	transition: --navColor1 0.3s, --navColor2 0.3s, --shade 0.3s;
-
+}
+.nav-right .carrinho-container .carrinho-button:hover,
+.nav-left .button:hover {
+    --navColor1: #e82a2a;
+    --navColor2: #b31217;
+    --shade: #00000033;
+}
+.nav-right .carrinho-container .carrinho-button {
+	border: none;
+	cursor: pointer;
 }
 .close-button:hover {
 	/*--closeColor: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
 	linear-gradient(120deg,rgba(232, 42, 42, 1) 0%, rgba(179, 18, 23, 1) 100%);*/
     --shade: #00000033;
 }
-.carrinhobutton:hover,
-.navbutton a:hover {
-    /*background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),*/
-	/*linear-gradient(120deg,rgba(232, 42, 42, 1) 0%, rgba(179, 18, 23, 1) 100%);*/
-    --navColor1: #e82a2a;
-    --navColor2: #b31217;
-    --shade: #00000033;
 
-}
-
-.carrinho-container {
-	margin-left: auto;
-}
-.carrinhobutton {
-	border: none;
-	cursor: pointer;
-}
 #itens-carrinho button {
 	background: darkred;
 	color: white;
@@ -447,4 +450,17 @@ footer {
 	text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
 	linear-gradient(120deg,rgba(232, 42, 42, 1) 0%, rgba(179, 18, 23, 1) 100%);
+}
+
+@media (max-width: 1107px) {
+	.nav-container {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.nav-left {
+		flex-direction: column;
+	}
+	.nav-left .logo {
+		margin-right: 0px;
+	}
 }

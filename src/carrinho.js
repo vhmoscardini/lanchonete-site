@@ -1,7 +1,12 @@
 let carrinho = [];
 
 function openCart() {
-	document.getElementById("sidepanel").style.width = "640px";
+	if (window.matchMedia("(max-width: 1107px)").matches) {
+		document.getElementById("sidepanel").style.width = "100%";
+	} 
+	else {
+		document.getElementById("sidepanel").style.width = "640px";
+	}
 	document.getElementById("sidepanel").style.boxShadow = "0px 0px 20px 10px rgba(0, 0, 0, 0.6)";
 }
 function closeCart() {
