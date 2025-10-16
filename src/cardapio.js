@@ -10,6 +10,9 @@ function createCard(image, title, price) {
 	const cardImage = document.createElement("img");
 	cardImage.setAttribute("src", image);
 
+	const cardText = document.createElement("div");
+	cardText.classList.add("card-text");
+
 	const cardTitle = document.createElement("h2");
 	cardTitle.textContent = title;
 
@@ -18,7 +21,7 @@ function createCard(image, title, price) {
 	
 	//const cardButton = document.createElement("a");
 	const cardButton = document.createElement("button");
-	cardButton.textContent = "Pedir"
+	cardButton.textContent = "Adicionar"
 	cardButton.className = "card-button"
 	cardButton.addEventListener("click", function() {
 		//sendMessage(title);
@@ -28,10 +31,11 @@ function createCard(image, title, price) {
 	//cardButton.textContent = "Pedir"
 	//cardButton.setAttribute("href", `https://wa.me/+5516989953333?text=gostaria de pedir um ${title}`);
 	card.appendChild(cardContent);
+	cardText.appendChild(cardTitle);
+	cardText.appendChild(cardPrice);
 
 	cardContent.appendChild(cardImage);
-	cardContent.appendChild(cardTitle);
-	cardContent.appendChild(cardPrice);
+	cardContent.appendChild(cardText);
 	cardContent.appendChild(cardButton);
 
 	return card;
