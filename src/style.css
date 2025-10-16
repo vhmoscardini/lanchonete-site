@@ -137,6 +137,9 @@ th, td {
 	linear-gradient(120deg,rgba(232, 42, 42, 1) 0%, rgba(179, 18, 23, 1) 100%);*/
     --shade: #00000033;
 }
+.logo img {
+	width: 480px;
+}
 
 #itens-carrinho button {
 	background: darkred;
@@ -462,5 +465,19 @@ footer {
 	}
 	.nav-left .logo {
 		margin-right: 0px;
+	}
+}
+@media (max-width: 630px) {
+	.logo img {
+		width: 80vw;
+	}
+	.card-content {
+		flex-direction: column;
+		width: 80vw;
+		align-items: center;
+	}
+	.card-content .card-button {
+		margin: 0px;
+		margin-bottom: 20px;
 	}
 }
