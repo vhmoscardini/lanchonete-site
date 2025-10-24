@@ -122,6 +122,7 @@ th, td {
 	padding: 14px 16px;
 	font-weight: bold;
 	font-size: 28px;
+	/*font-size: 1.55em;*/
 	text-decoration: none;
 	text-shadow: 2px 2px black;
 	transition: --navColor1 0.3s, --navColor2 0.3s, --shade 0.3s;
@@ -422,6 +423,8 @@ fieldset {
 .campo {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	/*display: flex;
+	justify-content: space-between;*/
 	padding: 8px;
 }
 .enviar {

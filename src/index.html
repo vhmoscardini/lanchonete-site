@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mega Sabor</title>
     <link rel="stylesheet" href="style.css">
+	<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+	   (function(){
+	      emailjs.init({
+	        publicKey: "vmT7jiZ-FhnBjWCUB",
+	      });
+	   })();
+	</script>
+
 </head>
 <body>
 	<nav class="nav-bar">
@@ -83,15 +94,15 @@
 			</div>
 			<div class="email">
 				<div class="email-container">
-					<form class="contato" action="/send_email" method="post">
+					<form class="contato">
 						<fieldset class="grupo">
 							<div class="campo">
 								<label for="nome">Nome</label>
-								<input id="nome" name="nome" placeholder="Seu nome" type="text" required>
+								<input id="nome" name="nome" placeholder="Seu nome" type="text" required/>
 							</div>
 							<div class="campo">
 								<label for="email">Email</label>
-								<input id="email" name="email" placeholder="voce@exemplo.com" type="email" required>
+								<input id="email" name="email" placeholder="voce@exemplo.com" type="email" required/>
 							</div>
 						</fieldset>
 						<fieldset class="grupo">
@@ -116,7 +127,7 @@
 							<div>
 						</fieldset>
 						<fieldset>
-							<input type="submit" class="enviar" value="Enviar">
+							<input type="submit" class="enviar" value="Enviar" onclick="sendEmail()">
 						</fieldset>
 					</form>
 				</div>
@@ -127,5 +138,6 @@
 	<script src="script.js"></script>
 	<script src="cardapio.js"></script>
 	<script src="carrinho.js"></script>
+	<script src="email.js"></script>
 </body>
 </html>
