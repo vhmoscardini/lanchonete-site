@@ -242,6 +242,7 @@ th, td {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 	font-size: 20px;
 }
 .container .info h1 {
@@ -259,7 +260,6 @@ th, td {
 	background: linear-gradient(120deg,var(--cardColor1) 0%, var(--cardColor2) 100%);
 	border-radius: 24px;
 	color: black;
-	margin-top: 1rem;
 	padding: 14px 16px;
 	transition: --cardColor1 0.3s, --cardColor2 0.3s;
 }
