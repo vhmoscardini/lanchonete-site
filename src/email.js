@@ -24,6 +24,6 @@ const sendEmail = async (event) => {
 
 document.addEventListener("DOMContentLoaded", () => {
 	document
-		.getElementById("contato")
+		.getElementById("email-form")
 		.addEventListener("submit", sendEmail);
 });
