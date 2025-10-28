@@ -1,9 +1,0 @@
-{
-	"cards": [
-		{ "image": "../assets/a.png", "name": "oi", "price": "tudo bem"},
-		{ "image": "../assets/b.png", "name": "olha que legall", "price": "da pra criar varios"},
-		{ "image": "../assets/c.jpg", "name": "sou um macaquinho", "price": "gosto de comer banana"},
-		{ "image": "https://png.pngtree.com/png-clipart/20230325/original/pngtree-juicy-burgers-with-a-transparent-background-png-image_9002761.png", "name": "hamburgao massa", "price": "R$14,59"},
-		{ "image": "https://img.cdndsgni.com/preview/10001736.jpg", "name": "batata fritaa", "price": "R$9,99"}
-	]
-}
